@@ -1,0 +1,40 @@
+app-profile {
+  position: relative;
+  z-index: 0;
+  top: auto;
+  left: auto;
+}
+
+.circle-gradient_1 {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background: var(--nerm-background-five);
+  filter: blur(150px);
+  position: absolute;
+  z-index: -2;
+  right: -180px;
+  top: 650px;
+}
+
+@media (min-width: 992px) {
+  app-profile {
+    position: fixed;
+    z-index: 99;
+    top: 50px;
+    left: 50px;
+  }
+
+  .circle-gradient_1 {
+    height: 1080px;
+    width: 1080px;
+    border-radius: 50%;
+    background: var(--nerm-background-one);
+    /* opacity: .5; */
+    filter: blur(350px);
+    position: absolute;
+    z-index: 2;
+    right: -400px;
+    top: 700px;
+  }
+}

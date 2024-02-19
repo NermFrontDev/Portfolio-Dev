@@ -1,0 +1,141 @@
+@import url(/src/styles.scss);
+
+/* ========================== MOBILE STYLES START HERE ========================== */
+.card-profile {
+  background: rgb(255, 255, 255, 20%);
+  backdrop-filter: blur(150px);
+  border: 2px solid white;
+  border-radius: 28px;
+}
+
+.card-profile__logo {
+  img {
+    width: 130px;
+    max-width: 100%;
+  }
+}
+
+.card-profile__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-picture {
+  text-align: center;
+  img {
+    margin: 1em 0;
+    width: 290px;
+    max-width: 100%;
+  }
+}
+
+.profile-titles  {
+  h1 {
+    font-size: 1.5em;
+  }
+  .email-text {
+    font-size: 1.35rem;
+  }
+  .copyright-text {
+    font-size: .9rem;
+  }
+}
+
+span.location-text {
+  font-size: 1.2rem;
+}
+
+.btn-hire {
+  border: none;
+  background: var(--nerm-background-one);
+  border-radius: 50px;
+  padding: .75em 0;
+  width: 280px;
+  transition: .2s ease all;
+  button {
+    border: none;
+    text-decoration: none;
+    background: transparent;
+    color: var(--nerm-color-white);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .5px;
+  }
+}
+
+/* .profile-hire_btn {
+  border: none;
+  background: var(--nerm-background-one);
+  border-radius: 50px;
+  padding: .75em 0;
+  width: 280px;
+  transition: .2s ease all;
+  btn-hire {
+    text-decoration: none;
+  }
+  button{
+    text-align: center;
+    text-decoration: none;
+    color: var(--nerm-color-white);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .5px;
+    border: none;
+    background: transparent;
+  }
+} */
+
+.social-icon {
+  border: 1.5px solid white;
+  border-radius: 100px;
+  padding: 10px;
+  transition: .2s ease all;
+  i {
+    font-size: 1.5rem;
+    color: var(--nerm-text-gray);
+  }
+}
+.social-icon:hover {
+  border: 1.5px solid transparent;
+  background-image: linear-gradient(to right, var(--nerm-background-one), var(--nerm-background-two));
+  i {
+    color: white;
+  }
+}
+
+.social-icon:hover ~ i:hover {
+  color: white;
+}
+/* ========================== MOBILE STYLES END HERE ========================== */
+
+
+/* ========================== DESKTOP STYLES START HERE ========================== */
+@media (min-width: 992px) {
+
+  .card-profile__logo {
+    img {
+      width: 160px;
+      max-width: 100%;
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+
+  .profile-picture {
+    img {
+      margin: 1em 0;
+      width: 300px;
+    }
+  }
+
+  .location-text {
+    font-size: 1.3rem;
+  }
+
+
+}
+
+/* ========================== DESKTOP STYLES END HERE ========================== */

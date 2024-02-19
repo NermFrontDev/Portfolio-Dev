@@ -1,10 +1,83 @@
 /* You can add global styles to this file, and also import other style files */
 
-:host {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 14px;
-  color: #333;
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global Nerm Variables */
+$nerm-background-dark: #1E1E1E;
+$nerm-color-gray-dark: #545454;
+$nerm-gray-light: #9C9C9C;
+$nerm-text-gray: #CCCCCC;
+$nerm-color-white: #ffffff;
+$nerm-background-one: linear-gradient(90deg, rgba(162, 89, 255, 1) 0%, rgba(233,4,100,1) 100%);
+$nerm-background-two: linear-gradient(170deg, rgba(247,54,227,1) 0%, rgba(92,68,228,1) 100%);
+$nerm-background-tree: linear-gradient(170deg, rgba(92,68,228,1) 0%, rgba(247,54,227,1) 100%);
+$nerm-background-four: linear-gradient(45deg, rgba(241,22,83,1) 0%, rgba(247,54,227,1) 100%);
+$nerm-background-five: linear-gradient(315deg, hsla(306, 92%, 59%, 1) 0%, hsla(249, 75%, 58%, 1) 100%);
+
+/* Angular Main colors */
+$nerm-ng-blue: #0546FF;
+$nerm-ng-violet: #5C44E4;
+$nerm-ng-purple: #8514F5;
+$nerm-ng-fuscia: #F637E3;
+$nerm-ng-red1: #E90464;
+$nerm-ng-red2: #F11653;
+$nerm-ng-red3: #FA2C04;
+$nerm-ng-dark: #0F0F11;
+$nerm-ng-gray: #EFEFF1;
+$nerm-ng-white: #FFFFFF;
+
+:root {
+  --nerm-background-dark: #{$nerm-background-dark};
+  --nerm-color-gray-dark: #{$nerm-color-gray-dark};
+  --nerm-gray-light: #{$nerm-gray-light};
+  --nerm-text-gray: #{$nerm-text-gray};
+  --nerm-color-white: #{$nerm-color-white};
+  --nerm-background-one: #{$nerm-background-one};
+  --nerm-background-two: #{$nerm-background-two};
+  --nerm-background-tree: #{$nerm-background-tree};
+  --nerm-background-four: #{$nerm-background-four};
+  --nerm-background-five: #{$nerm-background-five};
+
+  --nerm-blue: #{$nerm-ng-blue};
+  --nerm-violet: #{$nerm-ng-violet};
+  --nerm-purple: #{$nerm-ng-purple};
+  --nerm-fuscia: #{$nerm-ng-fuscia};
+  --nerm-red1: #{$nerm-ng-red1};
+  --nerm-red2: #{$nerm-ng-red2};
+  --nerm-red3: #{$nerm-ng-red3};
+  --nerm-dark: #{$nerm-ng-dark};
+  --nerm-gray: #{$nerm-ng-gray};
+  --nerm-white: #{$nerm-ng-white};
+}
+
+/* @import "~bootstrap-icons/font/bootstrap-icons.css"; */
+
+* {
   box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0; margin: 0;
+}
+
+body {
+  box-sizing: border-box !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex;
+  justify-content: center;
+  background: var(--nerm-background-dark);
+  color: var(--nerm-color-white);
+  overflow-x: hidden;
+
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  transition: .2s ease all;
+}
+
+.btn-primary{
+  background: var(--nerm-background-one);
+  border: none;
+}
+.btn-secondary{
+  background: var(--nerm-background-two);
+  border: none;
 }
