@@ -1,0 +1,47 @@
+<h4 class="m-0 p-0 title-resume">Trusted by <span class="text-gradient">Hundered Clients</span></h4>
+
+<div id="carouselExampleCaptions" class="carousel slide mt-5 d-flex flex-column align-items-start justify-content-center gap-4">
+  <div class="carousel-inner">
+    <div class="carousel-item"
+      *ngFor="let testimonial of testimonials; let i = index" [ngClass]="{'active': i === currentIndex}">
+      <div class="testimonial-container d-flex align-items-center justify-content-center my-2 my-lg-5">
+        <div
+          class="d-flex flex-column align-items-start justify-content-center col-10 my-5 gap-5">
+          <div class="d-flex flex-row align-items-center justify-content-center gap-4">
+            <div class="testimonial-img">
+              <img src="{{ testimonial.urlImage }}" alt="User image">
+            </div>
+            <div class="testimonial-info">
+              <h6 class="m-0">{{ testimonial.name }}</h6>
+              <p class="m-0">{{ testimonial.position }} of <span class="text-gradient-info">{{ testimonial.company }}</span></p>
+            </div>
+          </div>
+          <div class="testimonial-quote">
+            <p class="m-0">“{{ testimonial.feedback }}”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex flex-row align-items-center justify-content-center gap-2">
+    <div class="btn-slider">
+      <button
+        (click)="previousTestimonial()"
+        class="btn-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <i class="bi bi-chevron-left text-white"></i>
+      </button>
+    </div>
+    <div class="number-indicator">
+      <p class="m-0 text-white">{{ currentIndex + 1 }} / {{ testimonials.length }}</p>
+    </div>
+    <div class="btn-slider">
+      <button
+        (click)="nextTestimonial()"
+        class="btn-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <i class="bi bi-chevron-right text-white"></i>
+      </button>
+    </div>
+  </div>
+</div>
+

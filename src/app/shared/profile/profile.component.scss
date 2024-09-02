@@ -6,6 +6,9 @@
   backdrop-filter: blur(150px);
   border: 2px solid white;
   border-radius: 28px;
+  h2 {
+    font-size: 22px;
+  }
 }
 
 .card-profile__logo {
@@ -53,7 +56,7 @@ span.location-text {
   border-radius: 50px;
   padding: .75em 0;
   width: 280px;
-  transition: .2s ease all;
+  transition: all .2s ease-in-out;
   button {
     border: none;
     text-decoration: none;
@@ -65,49 +68,25 @@ span.location-text {
   }
 }
 
-/* .profile-hire_btn {
-  border: none;
-  background: var(--nerm-background-one);
-  border-radius: 50px;
-  padding: .75em 0;
-  width: 280px;
-  transition: .2s ease all;
-  btn-hire {
-    text-decoration: none;
-  }
-  button{
-    text-align: center;
-    text-decoration: none;
-    color: var(--nerm-color-white);
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: .5px;
-    border: none;
-    background: transparent;
-  }
-} */
-
-.social-icon {
-  border: 1.5px solid white;
-  border-radius: 100px;
-  padding: 10px;
-  transition: .2s ease all;
-  i {
-    font-size: 1.5rem;
-    color: var(--nerm-text-gray);
-  }
+.profile-socials .social-icon a {
+  font-size: 1rem;
+  color: var(--nerm-text-gray);
+  transition: all .2s ease-in-out;
+  padding: 15px;
+  border: 1.5px solid var(--nerm-text-gray);
+  border-radius: 50%;
+  transition: .3s all ease;
 }
-.social-icon:hover {
-  border: 1.5px solid transparent;
-  background-image: linear-gradient(to right, var(--nerm-background-one), var(--nerm-background-two));
-  i {
-    color: white;
-  }
+.profile-socials .social-icon a:hover {
+  background: rgb(222,82,215);
+  background: var(--nerm-background-one) !important;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text !important;
+  border: 1.5px #A259FF solid;
+  /* border: 1.5px solid var(--nerm-background-one); */
 }
 
-.social-icon:hover ~ i:hover {
-  color: white;
-}
+
 /* ========================== MOBILE STYLES END HERE ========================== */
 
 

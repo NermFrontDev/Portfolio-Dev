@@ -5,36 +5,183 @@ app-profile {
   left: auto;
 }
 
-.circle-gradient_1 {
-  height: 400px;
-  width: 400px;
-  border-radius: 50%;
-  background: var(--nerm-background-five);
-  filter: blur(150px);
+app-page-components {
   position: absolute;
-  z-index: -2;
-  right: -180px;
-  top: 650px;
+  left: 0;
 }
 
+.bg-gradient1 {
+  position: absolute;
+  z-index: -10;
+  top: 60%;
+  right: 0;
+  img {
+    width: 350px;
+    height: auto;
+    filter: blur(30px);
+  }
+}
+.bg-gradient2 {
+  position: absolute;
+  z-index: -9;
+  top: 215%;
+  left: 140px;
+  img {
+    width: 290px;
+    height: auto;
+    filter: blur(5px);
+  }
+}
+.bg-gradient3 {
+  position: absolute;
+  z-index: -8;
+  top: 425%;
+  right: 0;
+  img {
+    width: 200px;
+    height: auto;
+  }
+}
+.bg-gradient4 {
+  img {
+    display: none;
+  }
+}
+.bg-gradient5 {
+  position: absolute;
+  z-index: -6;
+  top: 890%;
+  right: -10%;
+  img {
+    display: block;
+    width: 300px;
+    height: auto;
+    filter: blur(15px) brightness(1.4);
+  }
+}
+
+/* iPad Media Queries Start */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .bg-gradient1 {
+    position: absolute;
+    z-index: -10;
+    top: 90%;
+    right: 0;
+    img {
+      width: 550px;
+      height: auto;
+      filter: blur(30px);
+    }
+  }
+  .bg-gradient2 {
+    position: absolute;
+    z-index: -9;
+    top: 190%;
+    left: 430px;
+    img {
+      width: 400px;
+      height: auto;
+      filter: blur(25px);
+    }
+  }
+  .bg-gradient3 {
+    position: absolute;
+    z-index: -8;
+    top: 350%;
+    right: 0;
+    img {
+      width: 300px;
+      height: auto;
+    }
+  }
+  .bg-gradient4 {
+    img {
+      display: none;
+    }
+  }
+  .bg-gradient5 {
+    position: absolute;
+    z-index: -6;
+    top: 610%;
+    right: 0;
+    img {
+      display: block;
+      width: 500px;
+      height: auto;
+      filter: blur(15px) brightness(1);
+    }
+  }
+}
+/* iPad Media Queries End */
+
+/* Desktop Media Queries Start */
 @media (min-width: 992px) {
   app-profile {
     position: fixed;
     z-index: 99;
-    top: 50px;
+    top: 5%;
     left: 50px;
   }
 
-  .circle-gradient_1 {
-    height: 1080px;
-    width: 1080px;
-    border-radius: 50%;
-    background: var(--nerm-background-one);
-    /* opacity: .5; */
-    filter: blur(350px);
+  app-page-components {
     position: absolute;
-    z-index: 2;
-    right: -400px;
-    top: 700px;
+    left: 36%;
+  }
+
+  .bg-gradient1 {
+    position: absolute;
+    z-index: -10;
+    top: 30%;
+    right: 0;
+    img {
+      width: 750px;
+      height: auto;
+      filter: none;
+    }
+  }
+  .bg-gradient2 {
+    position: absolute;
+    z-index: -9;
+    top: 160%;
+    left: 0;
+    img {
+      width: 600px;
+      height: auto;
+      filter: blur(2px);
+    }
+  }
+  .bg-gradient3 {
+    position: absolute;
+    z-index: -8;
+    top: 300%;
+    right: 0;
+    img {
+      width: 640px;
+      height: auto;
+    }
+  }
+  .bg-gradient4 {
+    position: absolute;
+    z-index: -7;
+    top: 400%;
+    left: 0;
+    img {
+      display: block;
+      width: 650px;
+      height: auto;
+    }
+  }
+  .bg-gradient5 {
+    position: absolute;
+    z-index: -6;
+    top: 740%;
+    right: 5%;
+    img {
+      display: block;
+      width: 600px;
+      height: auto;
+      filter: blur(15px) brightness(1);
+    }
   }
 }
+/* Desktop Media Queries End */

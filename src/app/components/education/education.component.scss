@@ -1,0 +1,129 @@
+@import url(../../../styles.scss);
+
+.title-resume {
+  font-size: 40px;
+  font-weight: 400;
+}
+span.text-gradient {
+  background: rgb(222,82,215);
+  background: var(--nerm-background-two) !important;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text !important;
+}
+
+.line-divisor {
+  width: 2px;
+  height: 675px;
+  background-color: var(--nerm-color-gray-dark);
+}
+
+/* iPad Media Queries Start */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .line-divisor {
+    width: 2px;
+    height: 520px;
+    background-color: var(--nerm-color-gray-dark);
+  }
+}
+/* iPad Media Queries End */
+
+.job {
+  .year-title h5 {
+    color: var(--nerm-color-gray-dark);
+  }
+  .active {
+    font-size: 18px;
+    background: rgb(222,82,215);
+    background: var(--nerm-background-one) !important;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text !important;
+  }
+
+  .year-title h5::before {
+    content: "";
+    width: 20px; height: 20px;
+    border-radius: 200px;
+    background: var(--nerm-color-gray-dark);
+    position: absolute;
+    left: 15px;
+  }
+  .year-title .active::before {
+    content: "";
+    width: 20px; height: 20px;
+    border-radius: 200px;
+    background: var(--nerm-background-one);
+    position: absolute;
+    left: 15px;
+  }
+
+  .job-item {
+    .job-title h6 {
+      font-size: 20px;
+      color: var(--nerm-color-white);
+      font-weight: 500;
+    }
+    .job-description p {
+      font-size: 18px;
+      color: var(--nerm-color-gray-dark);
+      font-weight: 500;
+    }
+  }
+}
+
+
+/* Desktop Media Queries Start */
+@media (min-width: 991.98px) {
+  .title-resume {
+    font-size: 50px;
+  }
+
+  .line-divisor {
+    width: 2px;
+    height: 560px;
+    background-color: var(--nerm-color-gray-dark);
+  }
+
+  .job {
+    .year-title h5 {
+      color: var(--nerm-color-gray-dark);
+      font-size: 18px;
+    }
+    .active {
+      font-size: 18px;
+      background: rgb(222,82,215);
+      background: var(--nerm-background-one) !important;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text !important;
+    }
+    .year-title h5::before {
+      content: "";
+      width: 15px; height: 15px;
+      border-radius: 200px;
+      background: var(--nerm-color-gray-dark);
+      position: absolute;
+      left: -6px;
+    }
+    .year-title .active::before {
+      content: "";
+      width: 15px; height: 15px;
+      border-radius: 200px;
+      background: var(--nerm-background-one);
+      position: absolute;
+      left: -6px;
+    }
+
+    .job-item {
+      .job-title h6 {
+        font-size: 20px;
+        color: var(--nerm-color-white);
+        font-weight: 500;
+      }
+      .job-description p {
+        font-size: 18px;
+        color: var(--nerm-color-gray-dark);
+        font-weight: 500;
+      }
+    }
+  }
+}
+/* Desktop Media Queries End */

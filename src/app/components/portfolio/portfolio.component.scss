@@ -1,0 +1,93 @@
+@import url(../../../styles.scss);
+
+.title-resume {
+  font-size: 40px;
+  font-weight: 400;
+}
+span.text-gradient {
+  background: rgb(222,82,215);
+  background: var(--nerm-background-four) !important;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text !important;
+}
+
+.project-item {
+  .project-card {
+    transition: .3s all ease;
+    .img-minor {
+      width: 335px;
+      height: auto;
+      transition: all 0.3s ease;
+    }
+    .project-title {
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+.project-card .card-img-top {
+  transition: all 0.3s ease;
+}
+
+.project-card:hover .card-img-top {
+  border-radius: 23px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.project-card:hover .project-title {
+  text-transform: underline;
+}
+
+
+/* iPad Media Queries Start */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .project-item {
+    .project-card {
+      .img-minor {
+        width: 310px;
+        height: auto;
+      }
+      .project-title {
+        font-size: 1.25rem;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
+/* iPad Media Queries End */
+
+
+/* Desktop Media Queries Start */
+@media (min-width: 991.98px) {
+  .title-resume {
+    font-size: 50px;
+  }
+
+  .project-item {
+    .project-card {
+      .img-minor {
+        width: 310px;
+        height: auto;
+      }
+      .project-title {
+        font-size: 1.5rem;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+
+  .project-card .card-img-top {
+    transition: all 0.3s ease;
+  }
+
+  .project-card:hover .card-img-top {
+    cursor: pointer;
+    border-radius: 23px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .project-card:hover .project-title {
+    text-transform: underline;
+  }
+}

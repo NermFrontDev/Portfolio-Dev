@@ -1,0 +1,39 @@
+@import url(../../../styles.scss);
+
+.home-content h2 {
+  font-size: 2.5rem;
+  max-width: 100%;
+}
+
+.home-content p {
+  font-size: 1.15rem;
+  max-width: 100%;
+}
+
+span.bg-gradient {
+  background: rgb(222,82,215);
+  background: var(--nerm-background-two) !important;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text !important;
+}
+
+/* iPad Media Queries Start */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .home-content p {
+    font-size: 1.15rem;
+    max-width: 70%;
+  }
+}
+/* iPad Media Queries End */
+
+@media (min-width: 992px) {
+  .home-content h2 {
+    font-size: 4rem;
+    max-width: 645px;
+  }
+
+  .home-content p {
+    font-size: 1.15rem;
+    max-width: 600px;
+  }
+}

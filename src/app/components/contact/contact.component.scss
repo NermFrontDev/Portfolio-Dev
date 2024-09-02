@@ -1,0 +1,145 @@
+@import url(../../../styles.scss);
+
+.title-resume {
+  font-size: 40px;
+  font-weight: 400;
+}
+span.text-gradient {
+  background: rgb(222,82,215);
+  background: var(--nerm-background-two) !important;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text !important;
+}
+
+.email-contact h6 {
+  font-size: 1.3rem;
+}
+.email-cols {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 5px;
+}
+
+.form-control {
+  padding: 3px 5px 3px 0;
+  color: var(--nerm-color-white);
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+.form-control::placeholder {
+  color: var(--nerm-color-gray-dark);
+}
+
+.text-message-area {
+  border-bottom: 2px solid var(--nerm-color-gray-dark) !important;
+  border-radius: 0;
+}
+
+.opt-default {
+  position: relative;
+  display: inline-block;
+}
+
+#subject {
+  cursor: pointer;
+}
+
+.opt-default::after {
+  content: '\F282';
+  font-family: 'bootstrap-icons';
+  color: var(--nerm-color-white);
+  font-size: 12px;
+  position: absolute;
+  top: 32px;
+  right: -20px;
+  pointer-events: none;
+}
+
+.btn-send_message {
+  border: none;
+  border-radius: 150px;
+  background: var(--nerm-background-tree);
+  transform: rotate(180);
+  padding: .8rem 0;
+  width: 200px;
+  transition: all .2s ease-in-out;
+  .btn-form {
+    color: var(--nerm-color-white);
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+
+/* iPad Media Queries Start */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .email-contact h6 {
+    font-size: 1.6rem;
+  }
+  .email-cols {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 2px;
+  }
+  .opt-default {
+    position: relative;
+    display: inline-block;
+  }
+
+  #subject {
+    cursor: pointer;
+  }
+
+  .opt-default::after {
+    content: '\F282';
+    font-family: 'bootstrap-icons';
+    color: var(--nerm-color-white);
+    font-size: 12px;
+    position: absolute;
+    top: 32px;
+    right: -20px;
+    pointer-events: none;
+  }
+}
+/* iPad Media Queries End */
+
+/* Desktop Media Queries Start */
+@media (min-width: 991.98px) {
+  .title-resume {
+    font-size: 50px;
+  }
+  .email-contact h6 {
+    font-size: 1.9rem;
+  }
+  .email-cols {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 2px;
+  }
+  .opt-default {
+    position: relative;
+    display: inline-block;
+  }
+
+  #subject {
+    cursor: pointer;
+  }
+
+  .opt-default::after {
+    content: '\F282';
+    font-family: 'bootstrap-icons';
+    color: var(--nerm-color-white);
+    font-size: 12px;
+    position: absolute;
+    top: 32px;
+    right: -20px;
+    pointer-events: none;
+  }
+}
+/* Desktop Media Queries End */

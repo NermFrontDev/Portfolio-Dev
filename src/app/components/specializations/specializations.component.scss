@@ -1,0 +1,108 @@
+@import url(../../../styles.scss);
+
+.title-resume {
+  font-size: 40px;
+  font-weight: 400;
+}
+span.text-gradient {
+  background: rgb(222,82,215);
+  background: var(--nerm-background-four) !important;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text !important;
+}
+
+.spec-container {
+  border: 1.8px solid var(--nerm-color-white);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: .3s all ease;
+  .spec-info {
+    .spec-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--nerm-color-white);
+    }
+    .spec-description {
+      color: var(--nerm-gray-light);
+      font-size: 13px;
+      font-weight: normal;
+    }
+    .spec-link {
+      font-size: 13px;
+      font-weight: 600;
+    }
+  }
+  .spec-icon img {
+    width: 30px;
+    height: auto;
+  }
+}
+.spec-container:hover {
+  background: none;
+  border: 1.8px #A259FF solid;
+  cursor: pointer;
+}
+
+/* iPad Media Queries Start */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .spec-info {
+    .spec-title {
+      font-size: 15px;
+    }
+    .spec-description {
+      font-size: 12px;
+    }
+    .spec-link {
+      font-size: 12px;
+    }
+  }
+  .spec-icon img {
+    width: 20px;
+    height: auto;
+  }
+}
+/* iPad Media Queries End */
+
+/* Desktop Media Queries Start */
+@media (min-width: 991.98px) {
+  .title-resume {
+    font-size: 50px;
+  }
+
+  .spec-container {
+    padding: 16px;
+    border: 1.8px solid;
+    border-image-slice: 2;
+    border-radius: 16px;
+    padding: 4rem;
+    transition: .3s all ease;
+  }
+  .spec-container:hover {
+    background: none;
+    border: 1.8px #A259FF solid;
+    cursor: pointer;
+  }
+
+  .spec-info {
+    box-sizing: border-box;
+    .spec-title {
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--nerm-color-white);
+    }
+    .spec-description {
+      color: var(--nerm-gray-light);
+      font-size: 13px;
+      font-weight: normal;
+    }
+    .spec-link {
+      font-size: 13px;
+      font-weight: 600;
+    }
+  }
+  .spec-icon img {
+    width: 35px;
+    height: auto;
+  }
+}
+/* Desktop Media Queries End */

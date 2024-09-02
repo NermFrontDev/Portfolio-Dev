@@ -1,4 +1,4 @@
-@import url(/src/styles.scss);
+@import url(./../../../styles.scss);
 /* ========================== MOBILE STYLES START HERE ========================== */
 .menu-icon a {
   position: fixed;
@@ -20,9 +20,10 @@ button.btn-close-canvas {
 }
 
 .navbar-list {
-  transition: .3s all ease !important;
+  transition: all .3s ease-in-out;
   li {
     margin: 1.5em 0;
+    transition: all .3s ease-in-out;
     a {
       color: var(--nerm-text-gray);
       margin: 1em 0;
@@ -59,6 +60,21 @@ a.icon-list {
 
 /* ========================== DESKTOP STYLES START HERE ========================== */
 @media (min-width: 992px) {
+
+  .floating-menu {
+    top: 150px;
+    right: 45px;
+    position: fixed;
+    z-index: 9999;
+  }
+
+  .menu-container {
+    background-color: rgba(255,255,255, 0.30);
+    width: 70px;
+    border: 2px solid white;
+    backdrop-filter: blur(50px);
+  }
+
   .menu-icon a {
     position: fixed;
     z-index: 199;
@@ -67,6 +83,64 @@ a.icon-list {
     img {
       width: 50px;
       max-width: 100%;
+    }
+  }
+
+  .list-item {
+    a {
+      color: var(--nerm-color-white);
+      .icon-list svg {
+        width: 25px;
+        max-width: 100%;
+        filter: brightness(1.5);
+      }
+      transition: .25s all ease;
+    }
+    a:hover {
+      color: var(--nerm-fuscia);
+    }
+    .item-link {
+      i {
+        font-size: 1.5rem;
+      }
+    }
+    .item-link::before {
+      content: "";
+      position: absolute;
+      margin-top: .8em;
+      /* top: 50%; */
+      left: -10px;
+      /* transform: translateY(-50%); */
+      width: 20px;
+      height: 20px;
+      background: linear-gradient(145deg, rgb(192, 54, 247) 0%, rgba(247,54,227,1) 100%);
+      clip-path: polygon(0% 100%, 0 0%, 100% 50%);
+      z-index: -2;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .item-link::after {
+      content: "Home";
+      color: var(--nerm-color-white);
+      position: absolute;
+      margin-top: 0;
+      /* top: 50%; */
+      left: -100px;
+      border-radius: 8px;
+      padding: .75em 1.5em;
+      /* transform: translateY(-50%);
+      width: 100px;
+      height: 40px; */
+      background: linear-gradient(145deg, rgba(92,68,228,1) 0%, rgba(247,54,227,1) 100%);
+      /* clip-path: polygon(0% 100%, 0 0%, 100% 50%); */
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .item-link:hover::before,
+    .item-link:hover::after {
+      opacity: 1;
+      color: var(--nerm-color-white);
     }
   }
 }

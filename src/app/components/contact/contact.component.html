@@ -1,0 +1,54 @@
+<h4 class="m-0 p-0 title-resume">Let's Work <span class="text-gradient">Together!</span></h4>
+
+<div class="email-contact mt-4">
+  <h6 class="m-0 p-0">{{ emailNerm }}</h6>
+</div>
+
+<form class="my-5 col-12">
+  <div class="d-flex flex-column gap-4 col-12">
+    <div class="d-flex flex-column align-items-center justify-content-between flex-md-row gap-4 gap-md-0 col-12">
+      <div class="email-cols col-12 col-md-6">
+        <label for="name">Full Name <span class="text-danger">*</span></label>
+        <input class="form-control pe-0 pe-md-4" type="text" id="name" placeholder="Your full name" autocomplete="off" required>
+      </div>
+      <div class="email-cols col-12 col-md-6">
+        <label for="email">Email <span class="text-danger">*</span></label>
+        <input class="form-control" type="email" id="email" placeholder="Your email address" autocomplete="off" required>
+      </div>
+    </div>
+    <div class="d-flex flex-column flex-md-row align-items-start justify-content-between col-12">
+      <div class="email-cols col-12 col-md-6">
+        <label for="phone">Phone (optional)</label>
+        <input class="form-control pe-0 pe-md-4" type="number" id="phone" placeholder="Your number phone" autocomplete="off">
+      </div>
+      <div class="email-cols col-12 col-md-6 opt-default">
+        <label for="subject">Select <span class="text-danger">*</span></label>
+        <select name="subject-email" id="subject" class="form-control">
+          <option value="1" selected disabled>Select a Subject</option>
+          <option *ngFor="let subject of subjects" value="{{ subject }}">{{ subject }}</option>
+        </select>
+      </div>
+    </div>
+    <div class="d-flex col-12">
+      <div class="email-cols col-12">
+        <label for="budget">Your Budget (optional)</label>
+        <input class="form-control" type="number" id="budget" placeholder="A range budget for your project" autocomplete="off">
+      </div>
+    </div>
+    <div class="d-flex col-12 mb-5">
+      <div class="email-cols col-12">
+        <label for="message">Message <span class="text-danger">*</span></label>
+        <textarea rows="10" class="form-control text-message-area" name="message-area" id="message" placeholder="Write your message here..." autocomplete="off" required></textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+    <button class="btn-send_message text-decoration-none text-center d-flex align-items-center justify-content-center" type="submit">
+      <a class="btn-form text-decoration-none m-0 p-0">
+        Send Message
+      </a>
+    </button>
+  </div>
+
+</form>

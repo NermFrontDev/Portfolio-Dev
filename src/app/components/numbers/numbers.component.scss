@@ -1,0 +1,26 @@
+@import url(../../../styles.scss);
+
+.number-content {
+  h3 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--nerm-color-white);
+  }
+}
+
+.years-text {
+  background: rgb(222,82,215);
+  background: var(--nerm-background-tree) !important;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text !important;
+}
+
+.projects-text {
+  background: rgb(222,82,215);
+  background: var(--nerm-background-four) !important;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text !important;
+}
