@@ -55,7 +55,28 @@ a.icon-list {
   color: white;
 }
 
+.active.item-link {
+  color: var(--nerm-fuscia) !important;
+}
+
+.offcanvas.offcanvas-end {
+  width: 300px !important;
+}
+
 /* ========================== MOBILE STYLES END HERE ========================== */
+
+
+/* ========================== IPAD STYLES START HERE ========================== */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .home-content p {
+    font-size: 1.15rem;
+    max-width: 70%;
+  }
+  .offcanvas.offcanvas-end {
+    width: 400px !important;
+  }
+}
+/* ========================== IPAD STYLES END HERE ========================== */
 
 
 /* ========================== DESKTOP STYLES START HERE ========================== */
@@ -104,44 +125,61 @@ a.icon-list {
         font-size: 1.5rem;
       }
     }
-    .item-link::before {
-      content: "";
-      position: absolute;
-      margin-top: .8em;
-      /* top: 50%; */
-      left: -10px;
-      /* transform: translateY(-50%); */
-      width: 20px;
-      height: 20px;
-      background: linear-gradient(145deg, rgb(192, 54, 247) 0%, rgba(247,54,227,1) 100%);
-      clip-path: polygon(0% 100%, 0 0%, 100% 50%);
-      z-index: -2;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
     .item-link::after {
-      content: "Home";
+      content: attr(data-text);
       color: var(--nerm-color-white);
       position: absolute;
-      margin-top: 0;
-      /* top: 50%; */
-      left: -100px;
-      border-radius: 8px;
-      padding: .75em 1.5em;
-      /* transform: translateY(-50%);
-      width: 100px;
-      height: 40px; */
+      align-content: center;
+      align-self: center;
+      justify-items: center;
+      padding-left: 1.25rem;
+      margin-top: -10px;
+      left: -90px;
+      border-radius: 50px;
+      width: 110px;
+      height: 55px;
+      clip-path: polygon(0 15%, 75% 15%, 90% 50%, 75% 85%, 0 85%);
       background: linear-gradient(145deg, rgba(92,68,228,1) 0%, rgba(247,54,227,1) 100%);
-      /* clip-path: polygon(0% 100%, 0 0%, 100% 50%); */
       z-index: -1;
       opacity: 0;
-      transition: opacity 0.3s ease;
+      transition: all 0.3s ease;
     }
-    .item-link:hover::before,
+    .item-link.route-home::after {
+      content: "Home";
+    }
+
+    .item-link.route-about::after {
+      content: "About";
+    }
+
+    .item-link.route-resume::after {
+      content: "Resume";
+    }
+
+    .item-link.route-services::after {
+      content: "Services";
+    }
+
+    .item-link.route-skills::after {
+      content: "Skills";
+    }
+
+    .item-link.route-portfolio::after {
+      content: "Portfolio";
+    }
+
+    .item-link.route-contact::after {
+      content: "Contact";
+    }
+
     .item-link:hover::after {
       opacity: 1;
       color: var(--nerm-color-white);
     }
+  }
+
+  .active.item-link {
+    color: var(--nerm-fuscia) !important;
   }
 }
 /* ========================== DESKTOP STYLES END HERE ========================== */

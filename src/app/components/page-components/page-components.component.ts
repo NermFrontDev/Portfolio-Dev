@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 interface sectionNames {
   id?: number,
@@ -19,6 +19,12 @@ interface sectionNames {
 })
 
 export class PageComponentsComponent {
+
+  @Output() sectionVisible = new EventEmitter<{ sectionId: string, isVisible: boolean }>();
+
+  onSectionVisible(sectionId: string, isVisible: boolean): void {
+    this.sectionVisible.emit({ sectionId, isVisible });
+  }
 
   constructor() {
   }

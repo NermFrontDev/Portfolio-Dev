@@ -1,5 +1,5 @@
 <!-- Identifier Start -->
-<div class="section-identifier d-flex aling-items-center justify-content-center col-12">
+<div class="section-identifier d-flex align-items-center justify-content-center justify-content-md-center justify-content-lg-start col-12" id="home" appIntersectionObserver (visible)="onSectionVisible('home', $event)">
   <a class="section-link">
     <div class="section-border">
       <div class="section-content d-flex flex-row align-items-center justify-content-center gap-2">
@@ -16,11 +16,11 @@
 <!-- Home Section End -->
 
 <!-- Number Section Start -->
-<app-numbers class="mt-5 col-12"></app-numbers>
+<app-numbers class="mb-5 col-12"></app-numbers>
 <!-- Number Section End -->
 
 <!-- Identifier Start -->
-<div class="section-identifier mt-lg-5">
+<div class="section-identifier mt-lg-5" id="about" appIntersectionObserver (visible)="onSectionVisible('about', $event)">
   <a class="section-link">
     <div class="section-border">
       <div class="section-content d-flex flex-row align-items-center justify-content-center gap-2">
@@ -33,11 +33,11 @@
 <!-- Identifier End -->
 
 <!-- About Section Start -->
-<app-about></app-about>
+<app-about class="mb-5"></app-about>
 <!-- About Section End -->
 
 <!-- Identifier Start -->
-<div class="section-identifier mt-lg-5">
+<div class="section-identifier mt-lg-5" id="resume" appIntersectionObserver (visible)="onSectionVisible('resume', $event)">
   <a class="section-link">
     <div class="section-border">
       <div class="section-content d-flex flex-row align-items-center justify-content-center gap-2">
@@ -50,11 +50,11 @@
 <!-- Identifier End -->
 
 <!-- Resume Section Start -->
-<app-education></app-education>
+<app-education class="mb-5"></app-education>
 <!-- Resume Section End -->
 
 <!-- Identifier Start -->
-<div class="section-identifier mt-lg-5">
+<div class="section-identifier mt-lg-5" id="services" appIntersectionObserver (visible)="onSectionVisible('services', $event)">
   <a class="section-link">
     <div class="section-border">
       <div class="section-content d-flex flex-row align-items-center justify-content-center gap-2">
@@ -67,11 +67,11 @@
 <!-- Identifier End -->
 
 <!-- Resume Section Start -->
-<app-specializations class="col-12"></app-specializations>
+<app-specializations class="col-12 mb-5"></app-specializations>
 <!-- Resume Section End -->
 
 <!-- Identifier Start -->
-<div class="section-identifier mt-lg-5">
+<div class="section-identifier mt-lg-5" id="skills" appIntersectionObserver (visible)="onSectionVisible('skills', $event)">
   <a class="section-link">
     <div class="section-border">
       <div class="section-content d-flex flex-row align-items-center justify-content-center gap-2">
@@ -84,11 +84,11 @@
 <!-- Identifier End -->
 
 <!-- Advantage Section Start -->
-<app-advantages class="col-12"></app-advantages>
+<app-advantages class="col-12 my-5"></app-advantages>
 <!-- Advantage Section End -->
 
 <!-- Identifier Start -->
-<div class="section-identifier mt-lg-5">
+<div class="section-identifier mt-lg-5" id="portfolio" appIntersectionObserver (visible)="onSectionVisible('portfolio', $event)">
   <a class="section-link">
     <div class="section-border">
       <div class="section-content d-flex flex-row align-items-center justify-content-center gap-2">
@@ -101,7 +101,7 @@
 <!-- Identifier End -->
 
 <!-- Portfolio Section Start -->
-<app-portfolio class="col-12"></app-portfolio>
+<app-portfolio class="col-12 mb-5"></app-portfolio>
 <!-- Portfolio Section End -->
 
 <!-- Identifier Start -->
@@ -118,11 +118,11 @@
 <!-- Identifier End -->
 
 <!-- Testimonial Section Start -->
-<app-testimonials class="col-12"></app-testimonials>
+<app-testimonials class="col-12 mb-5"></app-testimonials>
 <!-- Testimonial Section End -->
 
 <!-- Identifier Start -->
-<div class="section-identifier mt-lg-5">
+<div class="section-identifier mt-lg-5" id="contact" appIntersectionObserver (visible)="onSectionVisible('contact', $event)">
   <a class="section-link">
     <div class="section-border">
       <div class="section-content d-flex flex-row align-items-center justify-content-center gap-2">

@@ -14,5 +14,12 @@ export class ProfileComponent {
   email: string = 'nerm.frontend@gmail.com';
   location: string = 'Tucson, Arizona'
 
+  listNetwork = [
+    { linkNetwork: 'https://github.com/NermFrontDev', socialIcon: 'fa-github'},
+    { linkNetwork: 'https://www.linkedin.com/in/nerm-frontdev/', socialIcon: 'fa-linkedin-in'},
+    { linkNetwork: 'https://www.instagram.com/nerm_frontend/', socialIcon: 'fa-instagram'},
+    { linkNetwork: 'https://x.com/NermFrontend', socialIcon: 'fa-x-twitter'},
+  ]
+
 
 }

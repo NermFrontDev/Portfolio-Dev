@@ -1,8 +1,10 @@
-<app-menu></app-menu>
+<app-menu [activeSection]="activeSection"></app-menu>
 
 <app-profile data-aos="fade-up" class="p-0 m-0"></app-profile>
 
-<app-page-components class="d-flex flex-column align-items-baseline justify-content-center col-12 px-4 px-lg-0 col-lg-6 gap-5 mt-5"></app-page-components>
+<app-page-components
+(sectionVisible)="onSectionVisible($event.sectionId, $event.isVisible)"
+  class="d-flex flex-column align-items-baseline justify-content-center col-12 px-4 px-lg-0 col-lg-6 gap-5 mt-5"></app-page-components>
 
 <!-- <div class="circle-gradient_1">
   <div></div>

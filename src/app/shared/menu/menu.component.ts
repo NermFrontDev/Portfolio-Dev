@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent {
+
+  @Input() activeSection: string = '';
+
+  menuItems = [
+    {route: 'home', icon: 'bi-house'},
+    {route: 'about', icon: 'bi-person'},
+    {route: 'resume', icon: 'bi-journal-code'},
+    {route: 'services', icon: 'bi-box'},
+    {route: 'skills', icon: 'bi-gem'},
+    {route: 'portfolio', icon: 'bi-briefcase'},
+    {route: 'contact', icon: 'bi-envelope'},
+  ];
 
 }

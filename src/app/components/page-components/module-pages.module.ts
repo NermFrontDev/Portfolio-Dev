@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+import { IntersectionObserverDirective } from 'src/app/directives/intersection.directive';
 
 
 
@@ -7,6 +9,8 @@ import { CommonModule } from '@angular/common';
   declarations: [],
   imports: [
     CommonModule,
+    RouterLink,
+    RouterLinkActive
   ]
 })
 export class ModulePagesModule { }

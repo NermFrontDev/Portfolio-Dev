@@ -9,6 +9,14 @@ import * as Aos from 'aos';
 export class AppComponent implements OnInit {
   title = 'Front-Developer | Nerm';
 
+  activeSection: string = '';
+
+  onSectionVisible(sectionId: string, isVisible: boolean): void {
+    if (isVisible) {
+      this.activeSection = sectionId;
+    }
+  }
+
   ngOnInit(): void {
     Aos.init({
       easing: 'ease',

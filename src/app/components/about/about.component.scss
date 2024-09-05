@@ -17,6 +17,25 @@ span.text-gradient {
   max-width: 670px;
 }
 
+.resume-container {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  .btn-resume {
+    padding: 1rem 2rem;
+    background: var(--nerm-background-tree);
+    border: none;
+    border-radius: 200px;
+    a {
+      font-size: .9rem;
+      color: var(--nerm-color-white);
+      font-weight: 600;
+      text-transform: uppercase;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
+}
+
 @media (min-width: 992px) {
   .about-title {
     font-size: 50px;
