@@ -19,4 +19,11 @@ export class MenuComponent {
     {route: 'contact', icon: 'bi-envelope'},
   ];
 
+  socialIcons = [
+    {link: 'https://github.com/NermFrontDev', icon: 'fa-github'},
+    {link: 'https://www.linkedin.com/in/nerm-frontdev/', icon: 'fa-linkedin-in'},
+    {link: 'https://www.instagram.com/nerm_frontend/', icon: 'fa-instagram'},
+    {link: 'https://x.com/NermFrontend', icon: 'fa-twitter'},
+  ]
+
 }

@@ -42,38 +42,25 @@
       </div>
       <ul class="navbar-list list-unstyled fw-normal pb-2 small">
         <li *ngFor="let item of menuItems" class="list-item" data-bs-dismiss="offcanvas">
-          <a [attr.href]="'#' + item.route" [class.active]="activeSection === item.route" class="item-link text-decoration-none p-0">
+          <a [attr.href]="'#' + item.route" [class.active]="activeSection === item.route"
+            class="item-link text-decoration-none p-0 d-flex flex-row align-items-center justify-content-start gap-3">
             <i class="bi" [ngClass]="item.icon"></i>
-            <span class="ms-3 p-0 link-menu">{{ item.route }}</span>
+            <span class="p-0 link-menu">{{ item.route }}</span>
           </a>
         </li>
       </ul>
     </nav>
 
 
-    <div class="contact-links mx-5">
-      <div class="mx-5">
-        <h3 class="mb-4">Contact</h3>
+    <div class="contact-links mx-5
+    d-flex flex-column align-items-center justify-content-center gap-4">
+      <div class="mx-2 d-flex align-items-center justify-content-center">
+        <h3 class="m-0">Follow me:</h3>
       </div>
       <div class="profile-socials d-flex flex-row align-items-center justify-content-center my-2 gap-4">
-        <div class="social-icon">
-          <a href="">
-            <i class="fa-brands fa-twitter fa-xl"></i>
-          </a>
-        </div>
-        <div class="social-icon">
-          <a href="">
-            <i class="fa-brands fa-instagram fa-xl"></i>
-          </a>
-        </div>
-        <div class="social-icon">
-          <a href="">
-            <i class="fa-brands fa-linkedin-in fa-xl"></i>
-          </a>
-        </div>
-        <div class="social-icon">
-          <a href="">
-            <i class="fa-brands fa-github fa-xl"></i>
+        <div class="social-icon" *ngFor="let social of socialIcons">
+          <a routerLink="{{ social.link }}" target="_blank">
+            <i class="fa-brands {{ social.icon }} fa-xl"></i>
           </a>
         </div>
       </div>

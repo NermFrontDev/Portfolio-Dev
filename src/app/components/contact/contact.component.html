@@ -4,7 +4,7 @@
   <h6 class="m-0 p-0">{{ emailNerm }}</h6>
 </div>
 
-<form class="my-5 col-12" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+<form class="my-5 col-12" [formGroup]="contactForm" (submit)="sendEmail($event)">
   <div class="d-flex flex-column gap-4 col-12">
     <!-- Full Name Input -->
     <div class="d-flex flex-column align-items-center justify-content-between flex-md-row gap-4 gap-md-0 col-12">
@@ -13,8 +13,7 @@
         <input
           formControlName="fullName"
           class="form-control pe-0 pe-md-4" type="text" id="name" placeholder="Your full name"
-          minlength="4"
-          autocomplete="off" required>
+          autocomplete="off">
         <div *ngIf="contactForm.get('fullName')?.invalid && contactForm.get('fullName')?.touched" class="text-danger">
           Full Name is required.
         </div>
@@ -22,7 +21,7 @@
       <!-- Email Input -->
       <div class="email-cols col-12 col-md-6">
         <label for="email">Email <span class="text-danger">*</span></label>
-        <input formControlName="email" class="form-control" type="email" id="email" placeholder="Your email address" autocomplete="off" required>
+        <input formControlName="email" class="form-control" type="email" id="email" placeholder="Your email address" autocomplete="off">
         <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" class="text-danger">
           Please enter a valid email address.
         </div>
@@ -32,7 +31,7 @@
     <div class="d-flex flex-column flex-md-row align-items-start justify-content-between col-12">
       <div class="email-cols col-12 col-md-6">
         <label for="phone">Phone (optional)</label>
-        <input formControlName="phone" class="form-control pe-0 pe-md-4" type="number" id="phone" placeholder="Your number phone" autocomplete="off" min="10" max="10">
+        <input formControlName="phone" class="form-control pe-0 pe-md-4" type="number" id="phone" placeholder="Your number phone" autocomplete="off">
       </div>
       <div class="email-cols col-12 col-md-6 opt-default">
         <label for="subject">Select <span class="text-danger">*</span></label>
@@ -53,10 +52,10 @@
       </div>
     </div>
     <!-- Message -->
-    <div class="d-flex col-12 mb-5">
+    <div class="d-flex col-12 mb-3">
       <div class="email-cols col-12">
         <label for="message">Message <span class="text-danger">*</span></label>
-        <textarea formControlName="message" rows="6" class="form-control text-message-area" name="message-area" id="message" placeholder="Write your message here..." autocomplete="off" required></textarea>
+        <textarea formControlName="message" rows="6" class="form-control text-message-area" name="message-area" id="message" placeholder="Write your message here..." autocomplete="off"></textarea>
         <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched" class="text-danger">
           Message is required.
         </div>
@@ -64,11 +63,18 @@
     </div>
   </div>
 
+  <!-- reCAPTCHA -->
+  <re-captcha class="d-flex mb-3" (resolved)="resolved($event)" siteKey="6LeIDj8qAAAAAKkSsRjJ6ks2Am73bmd2KwuU9kxK"></re-captcha>
+  <!-- <div *ngIf="contactForm.get('recaptcha')?.invalid && contactForm.get('recaptcha')?.touched" class="text-danger">
+    Please complete the reCAPTCHA.
+  </div> -->
+
   <!-- Submit Button -->
   <div class="d-flex align-items-center justify-content-center justify-content-md-start">
     <button
-      [disabled]="!contactForm.valid"
-      class="btn-send_message text-decoration-none text-center d-flex align-items-center justify-content-center" type="submit">
+      [disabled]="!contactForm.valid || !recaptchaResponse"
+      class="btn-send_message text-decoration-none text-center d-flex align-items-center justify-content-center"
+      type="submit">
       <a class="btn-form text-decoration-none m-0 p-0">
         Send Message
       </a>
