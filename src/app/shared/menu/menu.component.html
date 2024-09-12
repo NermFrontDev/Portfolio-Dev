@@ -1,13 +1,11 @@
 <!-- Menu Navigation -->
-<nav class="floating-menu">
+<nav class="floating-menu" data-aos="fade-up"  data-aos-delay="300">
   <div class="menu-navbar d-none d-lg-flex align-items-center justify-content-center">
     <div class="menu-container d-flex align-items-center justify-content-center p-4 rounded-pill">
       <div class="menu-items">
         <ul class="d-flex flex-column align-items-center justify-content-center gap-4 list-unstyled fw-normal">
           <li *ngFor="let item of menuItems" class="list-item">
-            <a
-              [attr.href]="'#' + item.route"
-              [class.active]="activeSection === item.route"
+            <a [attr.href]="'#' + item.route" [class.active]="activeSection === item.route"
               [ngClass]="'item-link text-decoration-none p-0 route-' + item.route">
               <i class="bi" [ngClass]="item.icon"></i>
             </a>
@@ -17,8 +15,6 @@
     </div>
   </div>
 </nav>
-
-
 
 <div class="menu-icon d-block d-lg-none">
   <a data-bs-toggle="offcanvas" href="#offcanvasNerm" role="button" aria-controls="offcanvasNerm">

@@ -28,7 +28,7 @@
       </div>
     </div>
     <!-- Phone and Subject -->
-    <div class="d-flex flex-column flex-md-row align-items-start justify-content-between col-12">
+    <div class="d-flex flex-column flex-md-row align-items-start justify-content-between col-12 gap-4 gap-md-0">
       <div class="email-cols col-12 col-md-6">
         <label for="phone">Phone (optional)</label>
         <input formControlName="phone" class="form-control pe-0 pe-md-4" type="number" id="phone" placeholder="Your number phone" autocomplete="off">
@@ -64,7 +64,7 @@
   </div>
 
   <!-- reCAPTCHA -->
-  <re-captcha class="d-flex mb-3" (resolved)="resolved($event)" siteKey="6LeIDj8qAAAAAKkSsRjJ6ks2Am73bmd2KwuU9kxK"></re-captcha>
+  <re-captcha class="d-flex mb-3" id="captchaContact" (resolved)="resolved($event)" siteKey="6LeIDj8qAAAAAKkSsRjJ6ks2Am73bmd2KwuU9kxK"></re-captcha>
   <!-- <div *ngIf="contactForm.get('recaptcha')?.invalid && contactForm.get('recaptcha')?.touched" class="text-danger">
     Please complete the reCAPTCHA.
   </div> -->
