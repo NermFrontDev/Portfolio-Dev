@@ -16,7 +16,7 @@
   </div>
 </nav>
 
-<div class="menu-icon d-block d-lg-none">
+<div class="menu-icon d-flex d-lg-none align-items-center justify-content-end col-12">
   <a data-bs-toggle="offcanvas" href="#offcanvasNerm" role="button" aria-controls="offcanvasNerm">
     <img src="/assets/images/menu-icon.svg" alt="Icon Menu">
   </a>
@@ -51,10 +51,10 @@
     <div class="contact-links mx-5
     d-flex flex-column align-items-center justify-content-center gap-4">
       <div class="mx-2 d-flex align-items-center justify-content-center">
-        <h3 class="m-0">Follow me:</h3>
+        <h5 class="m-0">Follow me:</h5>
       </div>
       <div class="profile-socials d-flex flex-row align-items-center justify-content-center my-2 gap-4">
-        <div class="social-icon" *ngFor="let social of socialIcons">
+        <div class="social-icon" *ngFor="let social of _networkService.dataNetworks">
           <a routerLink="{{ social.link }}" target="_blank">
             <i class="fa-brands {{ social.icon }} fa-xl"></i>
           </a>

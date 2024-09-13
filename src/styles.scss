@@ -65,7 +65,7 @@ body {
   justify-content: center;
   background: var(--nerm-background-dark);
   color: var(--nerm-color-white);
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 
   font-family: "Inter Tight", sans-serif;
   font-optical-sizing: auto;

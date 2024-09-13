@@ -8,6 +8,7 @@ app-profile {
 app-page-components {
   position: absolute;
   left: 0;
+  /* overflow-x: hidden; */
 }
 
 .bg-gradient1 {
@@ -15,6 +16,7 @@ app-page-components {
   z-index: -10;
   top: 60%;
   right: 0;
+  overflow: hidden;
   img {
     width: 350px;
     height: auto;
@@ -25,7 +27,8 @@ app-page-components {
   position: absolute;
   z-index: -9;
   top: 215%;
-  left: 140px;
+  left: 40px;
+  overflow-x: hidden;
   img {
     width: 290px;
     height: auto;
@@ -37,12 +40,14 @@ app-page-components {
   z-index: -8;
   top: 425%;
   right: 0;
+  overflow-x: hidden;
   img {
     width: 200px;
     height: auto;
   }
 }
 .bg-gradient4 {
+  overflow-x: hidden;
   img {
     display: none;
   }
@@ -51,7 +56,8 @@ app-page-components {
   position: absolute;
   z-index: -6;
   top: 890%;
-  right: -10%;
+  right: 10%;
+  overflow-x: hidden;
   img {
     display: block;
     width: 300px;
@@ -67,6 +73,7 @@ app-page-components {
     z-index: -10;
     top: 90%;
     right: 0;
+    overflow-x: hidden;
     img {
       width: 550px;
       height: auto;
@@ -78,6 +85,7 @@ app-page-components {
     z-index: -9;
     top: 190%;
     left: 430px;
+    overflow-x: hidden;
     img {
       width: 400px;
       height: auto;
@@ -89,12 +97,14 @@ app-page-components {
     z-index: -8;
     top: 350%;
     right: 0;
+    overflow-x: hidden;
     img {
       width: 300px;
       height: auto;
     }
   }
   .bg-gradient4 {
+    overflow-x: hidden;
     img {
       display: none;
     }
@@ -104,6 +114,7 @@ app-page-components {
     z-index: -6;
     top: 610%;
     right: 0;
+    overflow-x: hidden;
     img {
       display: block;
       width: 500px;
@@ -126,6 +137,7 @@ app-page-components {
   app-page-components {
     position: absolute;
     left: 36%;
+    /* overflow-x: hidden !important; */
   }
 
   .bg-gradient1 {
@@ -133,6 +145,7 @@ app-page-components {
     z-index: -10;
     top: 30%;
     right: 0;
+    overflow-x: hidden;
     img {
       width: 750px;
       height: auto;
@@ -144,6 +157,7 @@ app-page-components {
     z-index: -9;
     top: 160%;
     left: 0;
+    overflow-x: hidden;
     img {
       width: 600px;
       height: auto;
@@ -155,6 +169,7 @@ app-page-components {
     z-index: -8;
     top: 300%;
     right: 0;
+    overflow-x: hidden;
     img {
       width: 640px;
       height: auto;
@@ -165,6 +180,7 @@ app-page-components {
     z-index: -7;
     top: 400%;
     left: 0;
+    overflow-x: hidden;
     img {
       display: block;
       width: 650px;
@@ -176,6 +192,7 @@ app-page-components {
     z-index: -6;
     top: 740%;
     right: 5%;
+    overflow-x: hidden;
     img {
       display: block;
       width: 600px;

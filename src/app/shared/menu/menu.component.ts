@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { NetworksService } from 'src/app/services/networks.service';
 
 @Component({
   selector: 'app-menu',
@@ -6,6 +7,10 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent {
+
+  constructor( public _networkService: NetworksService ) {
+
+  }
 
   @Input() activeSection: string = '';
 

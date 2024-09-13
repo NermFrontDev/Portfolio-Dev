@@ -6,7 +6,7 @@
       </a>
       <h2 class="d-none d-md-block m-0 p-0 pt-2">Front-End &<br>UI Developer</h2>
     </div>
-    <div class="card-profile__content mx-2 mx-md-3">
+    <div class="card-profile__content mx-2 mx-md-3 gap-2">
       <div class="profile-picture my-3 mb-md-1">
         <img class="rounded" src="assets/images/profile-picture.webp" alt="Profile picture" loading="lazy">
       </div>
@@ -19,10 +19,10 @@
       <div class="d-flex d-flex flex-row align-items-center justify-content-center my-2 gap-3">
         <div
           class="profile-socials"
-          *ngFor="let network of listNetwork">
+          *ngFor="let network of _networkService.dataNetworks">
           <div class="social-icon">
-            <a href="{{ network.linkNetwork }}" target="_blank">
-              <i class="fa-brands {{ network.socialIcon }} fa-xl"></i>
+            <a href="{{ network.link }}" target="_blank">
+              <i class="fa-brands {{ network.icon }} fa-xl"></i>
             </a>
           </div>
         </div>

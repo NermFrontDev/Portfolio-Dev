@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NetworksService } from 'src/app/services/networks.service';
 
 @Component({
   selector: 'app-profile',
@@ -7,19 +8,14 @@ import { Component } from '@angular/core';
 })
 export class ProfileComponent {
 
+  constructor( public _networkService: NetworksService) {
+  }
+
   date: Date = new Date();
   year: number = this.date.getFullYear();
 
-  role: string = 'Front-End & UI Developer'
+  role: string = 'Front-End & UI Developer';
   email: string = 'nerm.frontend@gmail.com';
-  location: string = 'Tucson, Arizona'
-
-  listNetwork = [
-    { linkNetwork: 'https://github.com/NermFrontDev', socialIcon: 'fa-github'},
-    { linkNetwork: 'https://www.linkedin.com/in/nerm-frontdev/', socialIcon: 'fa-linkedin-in'},
-    { linkNetwork: 'https://www.instagram.com/nerm_frontend/', socialIcon: 'fa-instagram'},
-    { linkNetwork: 'https://x.com/NermFrontend', socialIcon: 'fa-x-twitter'},
-  ]
-
+  location: string = 'Tucson, Arizona';
 
 }
