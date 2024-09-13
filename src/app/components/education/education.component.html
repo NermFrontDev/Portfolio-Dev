@@ -4,16 +4,16 @@
   </div>
 
   <div class="d-flex flex-column align-items-start gap-5">
-    <div *ngFor="let job of jobs" class="job d-flex flex-column gap-2 gap-lg-3">
+    <div *ngFor="let itemEducation of _educationService.dataEducation" class="job d-flex flex-column gap-2 gap-lg-3">
       <div class="year-title" data-aos="fade-in" data-aos-anchor-placement="top-center">
-        <h5 class="m-0 p-0 active">{{ job.yearTitle }}</h5>
+        <h5 class="m-0 p-0 active">{{ itemEducation.yearTitle }}</h5>
       </div>
-      <div *ngFor="let item of job.jobItems" class="job-item" data-aos="fade-left" data-aos-anchor-placement="top-center">
+      <div *ngFor="let jobItem of itemEducation.jobItems | keyvalue" class="job-item" data-aos="fade-left" data-aos-anchor-placement="top-center">
         <div class="job-title">
-          <h6 class="m-0 p-0">{{ item.title }}</h6>
+          <h6 class="m-0 p-0">{{ jobItem.value.title }}</h6>
         </div>
         <div class="job-description">
-          <p class="m-0 p-0">{{ item.description }}</p>
+          <p class="m-0 p-0">{{ jobItem.value.description }}</p>
         </div>
       </div>
     </div>

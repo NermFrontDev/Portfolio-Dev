@@ -15,9 +15,12 @@ span.text-gradient {
   .project-card {
     transition: .3s all ease;
     .img-minor {
-      width: 335px;
+      width: 350px;
       height: auto;
       transition: all 0.3s ease;
+    }
+    img.card-img-top {
+      max-width: 350px;
     }
     .project-title {
       font-size: 1.1rem;
@@ -69,6 +72,9 @@ span.text-gradient {
       .img-minor {
         width: 310px;
         height: auto;
+      }
+      img.card-img-top {
+        max-width: 100%;
       }
       .project-title {
         font-size: 1.5rem;

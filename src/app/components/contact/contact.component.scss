@@ -80,13 +80,6 @@ span.text-gradient {
   filter: brightness(0.6);
 }
 
-.rc-anchor-light,
-.rc-anchor-normal {
-  background: #2c2c2c !important;
-  color: var(--nerm-color-white) !important;
-  border: 1px solid var(--nerm-gray) !important;
-}
-
 /* iPad Media Queries Start */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .email-contact h6 {
@@ -154,13 +147,6 @@ span.text-gradient {
     top: 32px;
     right: -20px;
     pointer-events: none;
-  }
-
-  .rc-anchor-light,
-  .rc-anchor-normal {
-    background: #2c2c2c !important;
-    color: var(--nerm-color-white) !important;
-    border: 1px solid var(--nerm-gray) !important;
   }
 }
 /* Desktop Media Queries End */

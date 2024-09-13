@@ -19,6 +19,10 @@ span.text-gradient {
   transition: all .5s ease;
 }
 
+.testimonial-container {
+  height: 450px;
+}
+
 .testimonial-info {
   h6 {
     font-size: 1.4rem;
@@ -34,11 +38,12 @@ span.text-gradient {
 }
 
 .testimonial-quote p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .testimonial-img img {
   width: 50px;
+  border-radius: 150px;
 }
 
 .btn-prev,
@@ -65,6 +70,10 @@ span.text-gradient {
     transition: all .5s ease;
   }
 
+  .testimonial-container {
+    height: 350px;
+  }
+
   .testimonial-info {
     h6 {
       font-size: 1.4rem;
@@ -80,11 +89,12 @@ span.text-gradient {
   }
 
   .testimonial-quote p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .testimonial-img img {
     width: 50px;
+    border-radius: 150px;
   }
 
   .btn-prev,
@@ -97,4 +107,10 @@ span.text-gradient {
   }
 
 
+}
+
+@media (min-width: 1920px) {
+  .testimonial-container {
+    height: 450px;
+  }
 }

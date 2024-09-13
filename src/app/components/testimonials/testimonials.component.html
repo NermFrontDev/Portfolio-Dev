@@ -1,19 +1,19 @@
-<h4 class="m-0 p-0 title-resume">Trusted by <span class="text-gradient">Hundered Clients</span></h4>
+<h4 class="m-0 p-0 title-resume">Feedback from Top <span class="text-gradient">Professionals</span></h4>
 
 <div id="carouselExampleCaptions" class="carousel slide mt-5 d-flex flex-column align-items-start justify-content-center gap-4">
   <div class="carousel-inner">
     <div class="carousel-item"
-      *ngFor="let testimonial of testimonials; let i = index" [ngClass]="{'active': i === currentIndex}">
-      <div class="testimonial-container d-flex align-items-center justify-content-center my-2 my-lg-5">
+      *ngFor="let testimonial of _testimonialService.dataTestimonial; let i = index" [ngClass]="{'active': i === currentIndex}">
+      <div class="testimonial-container d-flex align-items-center justify-content-center">
         <div
-          class="d-flex flex-column align-items-start justify-content-center col-10 my-5 gap-5">
+          class="d-flex flex-column align-items-start justify-content-center col-10 gap-5">
           <div class="d-flex flex-row align-items-center justify-content-center gap-4">
             <div class="testimonial-img">
-              <img src="{{ testimonial.urlImage }}" alt="User image">
+              <img src="{{ testimonial.urlImage }}" alt="User image" loading="lazy">
             </div>
             <div class="testimonial-info">
               <h6 class="m-0">{{ testimonial.name }}</h6>
-              <p class="m-0">{{ testimonial.position }} of <span class="text-gradient-info">{{ testimonial.company }}</span></p>
+              <p class="m-0">{{ testimonial.position }} of <span class="text-gradient-info"> {{ testimonial.company }}</span></p>
             </div>
           </div>
           <div class="testimonial-quote">
@@ -24,7 +24,7 @@
     </div>
   </div>
 
-  <div class="d-flex flex-row align-items-center justify-content-center gap-2">
+  <div class="d-flex flex-row align-items-center justify-content-center gap-3">
     <div class="btn-slider">
       <button
         (click)="previousTestimonial()"

@@ -1,0 +1,143 @@
+{
+    "about": {
+        "description": "With almost 4 years of experience as a front-end developer, I have navigated challenges while working remotely for agencies, consulting to startups, and collaborating with talented individuals to bring both enterprise and consumer digital products to life. My quiet confidence, innate curiosity, and constant dedication drive me to improve, tackling one web development problem at a time. I am committed to excellence and continuous evolution in the world of front-end development."
+    },
+
+    "education": {
+        "0": {
+            "yearTitle": "2023 - Present",
+            "jobItems": {
+                "0": {
+                    "title": "Front-End Angular Developer",
+                    "description": "Freelance"
+                },
+                "1": {
+                    "title": "Front-End Angular Developer",
+                    "description": "Navojoa's University Computer Engineer Academy"
+                }
+            }
+        },
+        "1": {
+            "yearTitle": "2018 - 2023",
+                "jobItems": {
+                    "0": {
+                        "title": "Web Front-End Developer",
+                        "description": "Navojoa's University Computer Engineer Academy"
+                    },
+                    "1": {
+                        "title": "Web & UI Developer",
+                        "description": "Navojoa's University Computer Engineer Academy"
+                    },
+                    "2": {
+                        "title": "UX/UI Developer",
+                        "description": "Navojoa's University Computer Engineer Academy"
+                    }
+                }
+        },
+        "2": {
+            "yearTitle": "2014 - 2018",
+            "jobItems": {
+                "0": {
+                    "title": "Bachelor Degree of Computer System Engineering",
+                    "description": "University of Navojoa, Sonora, México"
+                }
+            }
+        }
+    },
+
+    "specializations": {
+        "0": {
+            "title": "Website Design Collaboration",
+            "icon": "/la_bezier-curve.svg",
+            "description": "I created digital products with unique ideas use Figma, Adobe Xd & Sketch",
+            "projectCount": "24 Projects"
+        },
+        "1": {
+            "title": "Development",
+            "icon": "/code_bezier-curve.svg",
+            "description": "I build website go live with Angular, Webflow or WordPress",
+            "projectCount": "26 Projects"
+        },
+        "2": {
+            "title": "SEO/Marketing",
+            "icon": "/seo_web.svg",
+            "description": "Increase your website traffic with optimized SEO tuning",
+            "projectCount": "8 Projects"
+        }
+    },
+    
+    "skills": {
+        "0": {
+            "name": "Figma",
+            "percentage": 85,
+            "imageSrc": "assets/images/skills/logo_figma.svg"
+        },
+        "1": {
+            "name": "Angular",
+            "percentage": 75,
+            "imageSrc": "assets/images/skills/logo_angular.svg"
+        },
+        "2": {
+            "name": "Bootstrap",
+            "percentage": 90,
+            "imageSrc": "assets/images/skills/logo_bootstrap.svg"
+        },
+        "3": {
+            "name": "TypeScript",
+            "percentage": 70,
+            "imageSrc": "assets/images/skills/logo_typescript.svg"
+        },
+        "4": {
+            "name": "Wordpress",
+            "percentage": 86,
+            "imageSrc": "assets/images/skills/logo_wordpress.svg"
+        },
+        "5": {
+            "name": "JavaScript",
+            "percentage": 70,
+            "imageSrc": "assets/images/skills/logo_javascript.svg"
+        },
+        "6": {
+            "name": "HTML",
+            "percentage": 95,
+            "imageSrc": "assets/images/skills/logo_html.svg"
+        },
+        "7": {
+            "name": "CSS",
+            "percentage": 85,
+            "imageSrc": "assets/images/skills/logo_css.svg"
+        }
+    },
+
+    "testimonials": {
+        "0": {
+            "urlImage": "assets/images/testimonials/user-1.webp",
+            "name": "Jonathan Andrade",
+            "position": "Sr .Net Full Stack",
+            "company": "VIQ Solutions",
+            "feedback": "I had the pleasure of working with Nahum on the same software development team and I can say that he is a dedicated engineer who adapts, strives, learns and, above all, never gives up. He is a dedicated person with excellent technical skills."
+        },
+        "1": {
+            "urlImage": "assets/images/testimonials/user-2.webp",
+            "name": "Anael Hernández Rivera",
+            "position": ".Net / Angular Full Stack",
+            "company": "Apex Systems",
+            "feedback": "Nahum is a very responsible and dedicated person in his work. He is someone who will always make you smile and treat you in a friendly way. He has great skill and experience in the world of UI development and frontend skills."
+        },
+        "2": {
+            "urlImage": "assets/images/testimonials/user-3.webp",
+            "name": "Aaron Estrada",
+            "position": "Sr Consultant",
+            "company": "Apex Systems",
+            "feedback": "A flexible young man who adapts to the needs of his client. An excellent companion. A professional with strong frontend skills with very good communication skills."
+        },
+        "3": {
+            "urlImage": "assets/images/testimonials/user-4.webp",
+            "name": "Amanda Corea",
+            "position": "Manager Founder/Director",
+            "company": "Crezco Foundation",
+            "feedback": "Nahum is an excellent animator and easy to work with. He is innovative, always studying the latest technique, consistent in returning a quality product, and a hard worker who will go above and beyond."
+        }
+    }
+}
+

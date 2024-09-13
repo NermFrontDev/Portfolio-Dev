@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TestimonialsService } from 'src/app/services/testimonials.service';
 
 interface Testimonial {
     urlImage: string,
@@ -17,28 +18,38 @@ type DataTestimonials = Testimonial[];
 })
 export class TestimonialsComponent {
 
+  constructor( public _testimonialService: TestimonialsService ) {
+  }
+
 
   testimonials:DataTestimonials = [
     {
       urlImage: 'assets/images/testimonials/user-1.webp',
-      name: 'Paublo Dybala',
-      position: 'CEO',
-      company: 'IBM Global',
-      feedback: 'Nerm - A Developer with the creativity, professional and master of code. Much more than what I´m expect. High quality product & flexible price. Recommended!.'
+      name: 'Jonathan Andrade',
+      position: 'Sr .Net Full Stack',
+      company: 'VIQ Solutions',
+      feedback: 'I had the pleasure of working with Nahum on the same software development team and I can say that he is a dedicated engineer who adapts, strives, learns and, above all, never gives up. He is a dedicated person with excellent technical skills.'
     },
     {
       urlImage: 'assets/images/testimonials/user-2.webp',
-      name: 'Nombre 2',
-      position: 'Puesto 2',
-      company: 'Compañía 2',
-      feedback: 'Otro testimonio.'
+      name: 'Anael Hernández Rivera',
+      position: '.Net / Angular Full Stack',
+      company: 'Apex Systems',
+      feedback: 'Nahum is a very responsible and dedicated person in his work. He is someone who will always make you smile and treat you in a friendly way. He has great skill and experience in the world of UI development and frontend skills.'
     },
     {
       urlImage: 'assets/images/testimonials/user-3.webp',
-      name: 'Nombre 3',
-      position: 'Puesto 3',
-      company: 'Compañía 3',
-      feedback: 'Otro testimonio.'
+      name: 'Aaron Estrada',
+      position: 'Sr Consultant',
+      company: 'Apex Systems',
+      feedback: 'A flexible young man who adapts to the needs of his client. An excellent companion. A professional with strong frontend skills with very good communication skills.'
+    },
+    {
+      urlImage: 'assets/images/testimonials/user-4.webp',
+      name: 'Amanda Corea',
+      position: 'Manager Founder/Director',
+      company: 'Crezco Foundation',
+      feedback: 'Nahum is an excellent animator and easy to work with. He is innovative, always studying the latest technique, consistent in returning a quality product, and a hard worker who will go above and beyond.'
     }
   ];
 

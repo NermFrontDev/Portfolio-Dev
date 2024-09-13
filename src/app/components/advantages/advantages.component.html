@@ -3,65 +3,25 @@
 <div class="d-flex flex-column mt-5">
   <div class="skills-container d-flex flex-row align-items-center justify-content-between flex-wrap" data-aos="fade-up"
   data-aos-anchor-placement="top-center">
-    <div class="skills-info d-flex flex-column gap-1 align-items-center justify-content-center mb-5">
+    <div class="skills-info d-flex flex-column gap-1 align-items-center justify-content-center mb-5"
+    *ngFor="let skill of _skillsService.dataSkills | slice:0:4">
       <div class="skills-content p-5 d-flex flex-column gap-4 align-items-center justify-content-center">
-        <img class="my-2" src="assets/images/skills/logo_figma.svg" alt="Technology Image">
-        <h4 class="m-0 skills-title">85%</h4>
+        <img class="my-2" src="{{ skill.imageSrc }}" alt="Technology Image" loading="lazy">
+        <h4 class="m-0 skills-title">{{ skill.percentage }} %</h4>
       </div>
-      <p class="m-0 p-0 mt-3 skills-link">Figma</p>
-    </div>
-    <div class="skills-info d-flex flex-column gap-1 align-items-center justify-content-center mb-5">
-      <div class="skills-content p-5 d-flex flex-column gap-4 align-items-center justify-content-center">
-        <img class="my-2" src="assets/images/skills/logo_angular.svg" alt="Technology Image">
-        <h4 class="m-0 skills-title">75%</h4>
-      </div>
-      <p class="m-0 p-0 mt-3 skills-link">Angular</p>
-    </div>
-    <div class="skills-info d-flex flex-column gap-1 align-items-center justify-content-center mb-5">
-      <div class="skills-content p-5 d-flex flex-column gap-4 align-items-center justify-content-center">
-        <img class="my-2" src="assets/images/skills/logo_bootstrap.svg" alt="Technology Image">
-        <h4 class="m-0 skills-title">90%</h4>
-      </div>
-      <p class="m-0 p-0 mt-3 skills-link">Bootstrap</p>
-    </div>
-    <div class="skills-info d-flex flex-column gap-1 align-items-center justify-content-center mb-5">
-      <div class="skills-content p-5 d-flex flex-column gap-4 align-items-center justify-content-center">
-        <img class="my-2" src="assets/images/skills/logo_typescript.svg" alt="Technology Image">
-        <h4 class="m-0 skills-title">70%</h4>
-      </div>
-      <p class="m-0 p-0 mt-3 skills-link">TypeScript</p>
+      <p class="m-0 p-0 mt-3 skills-link">{{ skill.name }}</p>
     </div>
   </div>
 
   <div class="skills-container d-flex flex-row align-items-center justify-content-between flex-wrap" data-aos="fade-up"
   data-aos-anchor-placement="top-center">
-    <div class="skills-info d-flex flex-column gap-1 align-items-center justify-content-center mb-5">
+    <div class="skills-info d-flex flex-column gap-1 align-items-center justify-content-center mb-5"
+    *ngFor="let skill of _skillsService.dataSkills | slice:4:8">
       <div class="skills-content p-5 d-flex flex-column gap-4 align-items-center justify-content-center">
-        <img class="my-2" src="assets/images/skills/logo_wordpress.svg" alt="Technology Image">
-        <h4 class="m-0 skills-title">86%</h4>
+        <img class="my-2" src="{{ skill.imageSrc }}" alt="Technology Image" loading="lazy">
+        <h4 class="m-0 skills-title">{{ skill.percentage }} %</h4>
       </div>
-      <p class="m-0 p-0 mt-3 skills-link">Wordpress</p>
-    </div>
-    <div class="skills-info d-flex flex-column gap-1 align-items-center justify-content-center mb-5">
-      <div class="skills-content p-5 d-flex flex-column gap-4 align-items-center justify-content-center">
-        <img class="my-2" src="assets/images/skills/logo_javascript.svg" alt="Technology Image">
-        <h4 class="m-0 skills-title">70%</h4>
-      </div>
-      <p class="m-0 p-0 mt-3 skills-link">JavaScript</p>
-    </div>
-    <div class="skills-info d-flex flex-column gap-1 align-items-center justify-content-center mb-5">
-      <div class="skills-content p-5 d-flex flex-column gap-4 align-items-center justify-content-center">
-        <img class="my-2" src="assets/images/skills/logo_html.svg" alt="Technology Image">
-        <h4 class="m-0 skills-title">95%</h4>
-      </div>
-      <p class="m-0 p-0 mt-3 skills-link">HTML</p>
-    </div>
-    <div class="skills-info d-flex flex-column gap-1 align-items-center justify-content-center mb-5">
-      <div class="skills-content p-5 d-flex flex-column gap-4 align-items-center justify-content-center">
-        <img class="my-2" src="assets/images/skills/logo_css.svg" alt="Technology Image">
-        <h4 class="m-0 skills-title">85%</h4>
-      </div>
-      <p class="m-0 p-0 mt-3 skills-link">CSS</p>
+      <p class="m-0 p-0 mt-3 skills-link">{{ skill.name }}</p>
     </div>
   </div>
 </div>

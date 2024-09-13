@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import * as Aos from 'aos';
 import { injectSpeedInsights } from '@vercel/speed-insights';
 import { inject } from "@vercel/analytics"
+import { AboutService } from './services/about.service';
 
 injectSpeedInsights();
 inject();
@@ -13,6 +14,10 @@ inject();
 })
 export class AppComponent implements OnInit {
   title = 'Front-Developer | Nerm';
+
+  constructor( public aboutService: AboutService ){
+
+  }
 
   activeSection: string = '';
 
