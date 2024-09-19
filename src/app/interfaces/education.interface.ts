@@ -1,9 +1,10 @@
 export interface Education {
-  yearTitle?: string;
-  jobItems?:  { [key: string]: JobItem };
+  yearTitle: string;
+  jobData:   JobData;
 }
 
-export interface JobItem {
-  title?:       string;
-  description?: string;
+export interface JobData {
+  jobCompany:     string;
+  jobRole:        string;
+  jobDescription: string;
 }

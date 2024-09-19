@@ -47,16 +47,15 @@
       </ul>
     </nav>
 
-
     <div class="contact-links mx-5
     d-flex flex-column align-items-center justify-content-center gap-4">
       <div class="mx-2 d-flex align-items-center justify-content-center">
         <h5 class="m-0">Follow me:</h5>
       </div>
       <div class="profile-socials d-flex flex-row align-items-center justify-content-center my-2 gap-4">
-        <div class="social-icon" *ngFor="let social of _networkService.dataNetworks">
-          <a routerLink="{{ social.link }}" target="_blank">
-            <i class="fa-brands {{ social.icon }} fa-xl"></i>
+        <div class="social-icon" *ngFor="let network of _networkService.dataNetworks">
+          <a href="{{ network.link }}" target="_blank">
+            <i class="fa-brands {{ network.icon }} fa-lg"></i>
           </a>
         </div>
       </div>

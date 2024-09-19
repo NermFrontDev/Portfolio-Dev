@@ -11,18 +11,16 @@ span.text-gradient {
   -webkit-background-clip: text !important;
 }
 
-.line-divisor {
-  width: 2px;
-  height: 675px;
-  background-color: var(--nerm-color-gray-dark);
+.experience-container {
+  border-left: 2px solid var(--nerm-color-gray-dark);
+  padding-left: 1.5rem;
 }
 
 /* iPad Media Queries Start */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .line-divisor {
-    width: 2px;
-    height: 520px;
-    background-color: var(--nerm-color-gray-dark);
+  .experience-container {
+    border-left: 2px solid var(--nerm-color-gray-dark);
+    padding-left: 3rem;
   }
 }
 /* iPad Media Queries End */
@@ -30,6 +28,12 @@ span.text-gradient {
 .job {
   .year-title h5 {
     color: var(--nerm-color-gray-dark);
+    font-size: 18px;
+  }
+  .year-title h6 {
+    font-size: 18px;
+    color: var(--nerm-color-white);
+    font-weight: 500;
   }
   .active {
     font-size: 18px;
@@ -41,29 +45,29 @@ span.text-gradient {
 
   .year-title h5::before {
     content: "";
-    width: 20px; height: 20px;
+    width: 15px; height: 15px;
     border-radius: 200px;
     background: var(--nerm-color-gray-dark);
     position: absolute;
-    left: 15px;
+    left: 17px;
   }
   .year-title .active::before {
     content: "";
-    width: 20px; height: 20px;
+    width: 15px; height: 15px;
     border-radius: 200px;
     background: var(--nerm-background-one);
     position: absolute;
-    left: 15px;
+    left: 17px;
   }
 
   .job-item {
-    .job-title h6 {
-      font-size: 20px;
-      color: var(--nerm-color-white);
+    .job-role p {
+      font-size: 16.5px;
+      color: var(--nerm-text-gray);
       font-weight: 500;
     }
     .job-description p {
-      font-size: 18px;
+      font-size: 16.5px;
       color: var(--nerm-color-gray-dark);
       font-weight: 500;
     }
@@ -77,6 +81,11 @@ span.text-gradient {
     font-size: 50px;
   }
 
+  .experience-container {
+    border-left: 2px solid var(--nerm-color-gray-dark);
+    padding-left: 3rem;
+  }
+
   .line-divisor {
     width: 2px;
     height: 560px;
@@ -86,7 +95,12 @@ span.text-gradient {
   .job {
     .year-title h5 {
       color: var(--nerm-color-gray-dark);
-      font-size: 18px;
+      font-size: 22px;
+    }
+    .year-title h6 {
+      font-size: 22px;
+      color: var(--nerm-color-white);
+      font-weight: 500;
     }
     .active {
       font-size: 18px;
@@ -111,16 +125,15 @@ span.text-gradient {
       position: absolute;
       left: -6px;
     }
-
     .job-item {
-      .job-title h6 {
-        font-size: 20px;
-        color: var(--nerm-color-white);
+      .job-role p {
+        font-size: 18px;
+        color: var(--nerm-text-gray);
         font-weight: 500;
       }
       .job-description p {
-        font-size: 18px;
-        color: var(--nerm-color-gray-dark);
+        font-size: 16px;
+        color: var(--nerm-gray-light);
         font-weight: 500;
       }
     }
