@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NetworksService } from 'src/app/services/networks.service';
+import { ProfileService } from 'src/app/services/profile.service';
 
 @Component({
   selector: 'app-profile',
@@ -8,14 +9,12 @@ import { NetworksService } from 'src/app/services/networks.service';
 })
 export class ProfileComponent {
 
-  constructor( public _networkService: NetworksService) {
-  }
+  constructor(
+    public _networkService: NetworksService,
+    public _profileService: ProfileService
+  ) { }
 
   date: Date = new Date();
   year: number = this.date.getFullYear();
-
-  role: string = 'Front-End & UI Developer';
-  email: string = 'nerm.frontend@gmail.com';
-  location: string = 'Tucson, Arizona';
 
 }

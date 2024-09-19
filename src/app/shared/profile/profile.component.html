@@ -4,17 +4,17 @@
       <a [routerLink]="['/']">
         <img src="assets/images/logo-picture.webp" alt="Icon Portfolio" loading="lazy">
       </a>
-      <h2 class="d-none d-md-block m-0 p-0 pt-2">Front-End &<br>UI Developer</h2>
+      <h2 class="d-none d-md-block m-0 p-0 pt-2">{{ _profileService.dataProfile.mainRole }} &<br>{{ _profileService.dataProfile.secondRole }}</h2>
     </div>
     <div class="card-profile__content mx-2 mx-md-3 gap-2">
       <div class="profile-picture my-3 mb-md-1">
         <img class="rounded" src="assets/images/profile-picture.webp" alt="Profile picture" loading="lazy">
       </div>
       <div class="profile-titles d-flex flex-column text-center">
-        <h1 class="d-block d-md-none">{{ role }}</h1>
-        <span class="mt-2 email-text">{{ email }}</span>
-        <span class="location-text">{{ location }}</span>
-        <span class="my-3 copyright-text">© {{ year }} Nerm. All Rights Reserved</span>
+        <h1 class="d-block d-md-none">{{ _profileService.dataProfile.mainRole }} & {{ _profileService.dataProfile.secondRole }}</h1>
+        <span class="mt-2 email-text">{{ _profileService.dataProfile.email }}</span>
+        <span class="location-text">{{ _profileService.dataProfile.location }}</span>
+        <span class="my-3 copyright-text">© {{ year }} {{ _profileService.dataProfile.rights }}</span>
       </div>
       <div class="d-flex d-flex flex-row align-items-center justify-content-center my-2 gap-3">
         <div
