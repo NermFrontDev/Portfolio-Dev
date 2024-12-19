@@ -38,7 +38,7 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
     PortfolioComponent,
     ProfileComponent,
     SpecializationsComponent,
-    TestimonialsComponent,
+    TestimonialsComponent
   ],
   imports: [
     SweetAlert2Module.forRoot(),
